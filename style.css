@@ -1,0 +1,98 @@
+body{
+    margin: 0;
+    padding: 0;
+} 
+.section{
+    width: 100%;
+    height: 100vh;
+    background: #000;
+    position: relative;    
+}
+.section:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right,#f00,#f00,#0f0,#0ff,#ff0,#0ff);
+    mix-blend-mode: color;
+    pointer-events: none;
+}
+ video{ 
+     height: 100vh;
+     object-fit: cover;
+}
+h1{
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    font-size: 3em;
+    font-family: sans-serif;
+    letter-spacing: .1em;
+}
+h1 span{
+    display: inline-block;
+    animation: animate 1.5s linear  forwards;
+}
+@keyframes animate{
+    0%{
+        opacity: 0;
+        transform: rotateY(90deg);
+        filter: blur(10px);
+    }
+    100%{
+        opacity: 1;
+        transform: rotateY(0deg);
+        filter: blur(0);
+    }
+} 
+h1 span:nth-child(1){
+    animation-delay: .4s;
+}
+h1 span:nth-child(2){
+    animation-delay: .8s;
+}
+h1 span:nth-child(3){
+    animation-delay: 1.2s;
+}
+h1 span:nth-child(4){
+    animation-delay: 1.6s;
+}
+h1 span:nth-child(5){
+    animation-delay: 2s;
+}
+h1 span:nth-child(6){
+    animation-delay: 2.4s;
+}
+h1 span:nth-child(7){
+    animation-delay: 2.8s;
+}
+h1 span:nth-child(8){
+    animation-delay: 3.2s;
+}
+h1 span:nth-child(9){
+    animation-delay: 3.6s;
+}
+h1 span:nth-child(10){
+    animation-delay: 4s;
+} 
+.name{
+    position: absolute;
+    right: 0;
+    bottom: 0; 
+    color: #0f0;
+    display: flex;
+    flex-direction: row;
+    background: linear-gradient(to right,#f32170,#ffeb07,#2196f3,#ff00eb);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;    
+}
+.name h4{
+    padding-right: 10px;
+}
